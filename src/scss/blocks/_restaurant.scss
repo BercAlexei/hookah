@@ -1,0 +1,21 @@
+.restaurant {
+    min-height: 236px;
+    background: url('../../img/restaurant/bg.jpg') center center / cover no-repeat;
+    padding: 65px 0 63px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        max-width: 685px;
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: #C8CDD8;
+        margin-top: 20px;
+    }
+}

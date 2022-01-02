@@ -1,0 +1,31 @@
+@import 'base/libs';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/animation';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/nav-menu';
+@import 'blocks/traditions';
+@import 'blocks/interior';
+@import 'blocks/menu';
+@import 'blocks/tabs';
+@import 'blocks/card';
+@import 'blocks/advatages';
+@import 'blocks/news';
+@import 'blocks/restaurant';
+@import 'blocks/btns';
+@import 'blocks/footer';
+
+@import 'blocks/media';

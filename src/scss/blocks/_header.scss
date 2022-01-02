@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__social {
+        display: flex;
+        margin-top: 100px;
+        &-link {
+            margin-right: 27px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                font-style: 11px;
+                span {
+                    
+                    &:hover {
+                        &:before {
+                            transition: all .3s;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

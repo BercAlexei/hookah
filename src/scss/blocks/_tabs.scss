@@ -1,0 +1,18 @@
+.tabs {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    &__tab {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #2B2D33;
+        padding: 19px 20px 13px 20px;
+        cursor: pointer;
+        &_active {
+            background-color: var(--main-color);
+            color: #E3E5EA;
+        }
+    }
+}
