@@ -3,69 +3,86 @@
     background: var(--bg-color) url('../img/footer/map.jpg') left top / contain no-repeat;
     padding: 97px 0 130px 0;
     &__contacts {
+        display: grid;
+        grid-template-areas: 
+        "title img"
+        "tel tel"
+        "address address"
+        "time time"
+        "btns btns";
         position: absolute;
         right: 0;
         min-width: 390px;
         min-height: 387px;
+        align-items:center;
     }
-    &__head {
+    &__title {
+        grid-area: title;
+    }
+    &__img {
+        justify-self: end;
+        grid-area: img;
+        max-width: 100px;
+        max-height: 103px;
+        img {   
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    span {
+        margin-right: 8px;
+        &::before {
+            color: #2B2D33;
+        }
+    }
+    &__tel {
+        margin-top: 12px;
+        grid-area: tel;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        &-img {
-            max-width: 100px;
-            max-height: 103px;
-            img {   
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+        
+        a {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 21px;
+            color: #2B2D33;
+            text-decoration: none;
         }
     }
-    &__info {
-        margin-top: 12px;
-        span {
-            margin-right: 8px;
-            &::before {
-                color: #2B2D33;
-            }
-        }
-        &-tel {
-            display: flex;
-            align-items: center;
-            
-            a {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 15px;
-                line-height: 21px;
-                color: #2B2D33;
-                text-decoration: none;
-            }
-        }
-        &-add {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 24px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 23px;
-            color: #2B2D33;
-        }
-        &-time {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 24px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 23px;
-            color: #2B2D33;
-        }
+    &__add {
+        grid-area: address;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+        color: #2B2D33;
     }
+    &__time {
+        grid-area: time;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+        color: #2B2D33;
+    }
+    
     &__btns {
+        grid-area: btns;
         display: flex;
         margin-top: 50px;
+        span {
+            &::before {
+                color: #6A6F7D;
+            }
+        }
     }
 }

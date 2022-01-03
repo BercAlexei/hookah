@@ -1,13 +1,21 @@
 .traditions {
     padding: 71px 0 65px 0;
     background: var(--bg-color);
-    &__info {
-        display: flex;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 325px 1fr;
+        grid-template-areas: 
+        "info info img"
+        "one two three";
+        column-gap: 68px;
+        row-gap: 30px;
         align-items: center;
-        justify-content: space-between;
-        
+    }
+    &__info {
+        grid-area: info;
+        width: 612px;
         &-text {
-            width: 50%;
             p {
                 font-style: normal;
                 font-weight: normal;
@@ -17,32 +25,40 @@
                 margin-top: 36px;
             }
         }
-        &-img {
-            max-width: 50%;
-            min-height: 450px;
-            img {   
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        grid-area: img;
+        max-width: 450px;
+        height: 325px;
+        img {   
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
-    &__services {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &-tab {
-            width: 355px;
-            padding-top: 37px;
-            border-top: 1px solid #BDC4CF;
-            &-text {
-                margin-top: 27px;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 24px;
-                color: #585E67;
-            }
+    &__item {
+        width: 355px;
+        padding-top: 37px;
+        border-top: 1px solid #BDC4CF;
+        &-text {
+            margin-top: 27px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #585E67;
+        }
+        &-1 {
+            grid-area: one;
+        }
+        &-2 {
+            grid-area: two;
+        }
+        &-3 {
+            grid-area: three;
         }
     }
 }
