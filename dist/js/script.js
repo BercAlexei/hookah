@@ -3871,7 +3871,11 @@ function slider() {
     nav: false,
     loop: false,
     prevButton: '.slider-btn_left',
-    nextButton: '.slider-btn_right'
+    nextButton: '.slider-btn_right',
+    gutter: 30,
+    responsive: {
+      768: {}
+    }
   });
   (0,_node_modules_tiny_slider_src_tiny_slider_js__WEBPACK_IMPORTED_MODULE_0__.tns)({
     container: '.news__slider',

@@ -8,7 +8,14 @@ export default function slider() {
       nav: false,
       loop: false,
       prevButton: '.slider-btn_left',
-      nextButton: '.slider-btn_right'
+      nextButton: '.slider-btn_right',
+      gutter: 30,
+      responsive: {
+        768: {
+            
+            
+        }
+    }
     });
 
     tns({

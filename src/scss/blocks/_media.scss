@@ -1,5 +1,117 @@
 @media (max-width: 1200px) {
-    
+    .container {
+        max-width: 940px;
+    }
+    .header {
+        &__logo {
+            height: 130px;
+        }
+        &__social {
+            margin-top: 85px;
+            &-link {
+                margin-right: 25px;
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .nav-menu {
+        margin-top: 85px;
+        li {
+            margin-right: 25px;
+        }
+        &__link {
+            font-size: 13px;
+        }
+    }
+    .traditions {
+        &__img {
+            position: relative;
+        }
+    }
+
+    .menu {
+        min-height: 697px;
+        padding: 100px 0;
+        &__head {
+            &-img {
+                height: 150px;
+            }
+        }
+    }
+
+    .tabs {
+        &__tab {
+            padding: 19px 15px 13px 15px;
+        }
+    }
+
+    .card {
+        width: 300px;
+    }
+    .adventages {
+        min-height: 544px;
+        background-size: 75%;
+        padding: 38px 0;
+    }
+    .news {
+        min-height: 560px;
+        padding: 60px 0 55px 0;
+        &__slider {
+            &-img {
+                height: 205px;
+            }
+        }
+    }
+    .restaurant {
+        &__text {
+            max-width: 615px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+    }
+    .title {
+        &_restaurant {
+            font-size: 20px;
+        }
+        &_footer {
+            font-size: 32px;
+        }
+    }
+    .btn {
+        &_dark {
+            width: 150px;
+            height: 50px;
+        }
+    }
+    .footer {
+        min-height: 366px;
+        padding: 50px 0;
+        &__contacts {
+            min-width: 350px;
+            min-height: 320px;
+            right: 3%;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        &__tel {
+            margin-top: 10px;
+        }
+        &__time {
+            margin-top: 10px;
+        }
+        &__add {
+            margin-top: 10px;
+        }
+        &__btns {
+            margin-top: 30px;
+        }
+        &__img {
+            height: 95px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
