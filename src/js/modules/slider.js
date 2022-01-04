@@ -12,10 +12,9 @@ export default function slider() {
       gutter: 30,
       responsive: {
         768: {
-            
-            
+          items: 2
         }
-    }
+      }
     });
 
     tns({
@@ -26,6 +25,11 @@ export default function slider() {
       loop: false,
       gutter: '30',
       prevButton: '.news__btn_left',
-      nextButton: '.news__btn_right'
+      nextButton: '.news__btn_right',
+      responsive: {
+        768: {
+          items: 2
+        }
+      }
     });
 }

@@ -3,11 +3,7 @@
         max-width: 940px;
     }
     .header {
-        &__logo {
-            height: 130px;
-        }
         &__social {
-            margin-top: 85px;
             &-link {
                 margin-right: 25px;
                 a {
@@ -17,7 +13,6 @@
         }
     }
     .nav-menu {
-        margin-top: 85px;
         li {
             margin-right: 25px;
         }
@@ -115,7 +110,214 @@
 }
 
 @media (max-width: 992px) {
+    .container {
+        max-width: 728px;
+    }
+
+    .title {
+        font-size: 28px;
+        &_promo {
+            margin-top: 156px;
+            font-size: 50px;
+            &:before {
+                height: 277px;
+                top: -65px;
+            }
+        }
+        &_card {
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &_tab {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &_restaurant {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .header {
+        &__social {
+            position: absolute;
+            right: 105px;
+            
+        }
+    }
+
+    .nav-menu {
+        position: fixed;
+        background: #30333B;
+        margin-top: 0;
+        width: 100vw;
+        height: 100vh;
+        top: -100vh;
+        left: 0;
+        z-index: 200;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 96px;
+        padding-bottom: 102px;
+        transition: all .5s;
+        li {
+            margin: 0;
+            height: 85px;
+            width: 100%;
+            text-align: center;
+            
+        }
+        &__link {
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 48px;
+            text-align: center;
+            color: #EDF0F4;
+        }
+        &_active {
+            top: 0vh;
+        }
+    }
+    .humburger {
+        display: flex;
+        z-index: 200;
+    }
+    .promo {
+        min-height: 710px;
+        background: url('../img/promo/promo__mini.jpg') center center / cover no-repeat;
+        &__info {
+            margin-top: 145px;
+        }
+    }
+    .traditions {
+        padding: 72px 0 25px 0;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "info info"
+            "one img"
+            "two three";
+            row-gap: 23px;
+            column-gap: 20px;
+        }
+        &__info {
+            width: 100%;
+            margin-bottom: 23px;
+        }
+        &__img {
+            height: 205px;
+        }
+    }
+
+    .interior {
+        min-height: 570px;
+        padding: 62px 0 70px 0;
+        .slider {
+            margin-top: 45px;
+            &__img {
+                max-width: 307px;
+                height: 350px;
+            }
+        }
+    }
     
+    .menu {
+        min-height: 569px;
+        padding: 32px 0 40px 0;
+        &__head {
+            padding-bottom: 66px;
+            &-img {
+                height: 120px;
+            }
+        }
+    }
+    .tabs {
+        &__tab {
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+    .card {
+        width: 236px;
+        min-height: 260px;
+        padding: 40px 15px;
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+            span {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        .count {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    
+    .adventages {
+        min-height: 710px;
+        padding: 40px 0;
+        background-position: bottom;
+        background-size: 100%;
+        &__content {
+            left: 50%;
+            transform: translateX(-50%);
+            height: 449px;
+        }
+    }
+
+    .news {
+        padding: 72px 0 73px 0;
+        &__slider {
+            &-img {
+                height: 243px;
+            }
+            &-date {
+                font-size: 14px;
+                line-height: 19px;
+            }
+            &-title {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+    
+    .restaurant {
+        padding: 45px 0 50px 0;
+        &__text {
+            max-width: 427px;
+        }
+        &__descr {
+            margin-top: 11px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+    .footer {
+        min-height: 812px;
+        padding: 352px 0 115px 0;
+        background-position: bottom;
+        background-size: 100% 60%;
+        &__contacts {
+            // position: relative;
+            top: 30px;
+            left: 50%;
+            right: 0;
+            width: 725px;
+            transform: translateY(0);
+            transform: translateX(-50%);
+            align-items: flex-start;
+            grid-template-areas: 
+            "title title title"
+            "tel address time"
+            "btns btns img";
+        }
+    }
 }
 
 @media (max-width: 768px) {

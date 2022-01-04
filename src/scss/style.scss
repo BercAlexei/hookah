@@ -10,6 +10,9 @@ h2 {
     margin: 0;
 }
 
+.hidden {
+    overflow: hidden;
+}
 .container {
     position: relative;
     max-width: 1200px;
@@ -30,5 +33,6 @@ h2 {
 @import 'blocks/restaurant';
 @import 'blocks/btns';
 @import 'blocks/footer';
+@import 'blocks/humburger';
 
 @import 'blocks/media';
