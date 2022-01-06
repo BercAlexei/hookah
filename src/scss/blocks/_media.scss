@@ -304,7 +304,6 @@
         background-position: bottom;
         background-size: 100% 60%;
         &__contacts {
-            // position: relative;
             top: 30px;
             left: 50%;
             right: 0;
@@ -320,8 +319,89 @@
     }
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 767px) {
+    .container {
+        max-width: 550px;
+    }
+    .title {
+        &_promo {
+            font-size: 40px;
+        }
+    }
+    .humburger {
+        position: absolute;
+        right: 20px;
+    }
+    .promo {
+        min-height: 640px;
+        &__info {
+            width: 100%;
+            // flex-direction: column;
+            margin-top: 100px;
+            &-tel {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .adventages {
+        display: none;
+    }
+    .menu {
+        &__head {
+            padding-bottom: 80px;
+            &-img {
+                height: 100px;
+            }
+        }
+        &__cards {
+            margin-top: 70px;
+        }
+        &__btns {
+            display: flex;
+        }
+    }
+    .tabs {
+        &__tab {
+            font-size: 14px;
+            line-height: 15px;
+        }
+    }
+    .news {
+        padding: 50px 0 60px 0;
+    }
+    .restaurant {
+        padding: 40px 0;
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__text {
+            max-width: 100%;
+        }
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    .footer {
+        background-size: 100% 55%;
+        &__contacts {
+            width: 0;
+            top: 20px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 390px;
+            grid-template-areas: 
+                "title img"
+                "tel tel"
+                "address address"
+                "time time"
+                "btns btns";
+        }
+    }
 }
 
 @media (max-width: 576px) {

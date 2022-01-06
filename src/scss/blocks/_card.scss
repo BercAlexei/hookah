@@ -3,6 +3,10 @@
     min-height: 273px;
     padding: 45px 20px;
     border: 4px solid #CFD2D9;
+    margin-right: 30px;
+    &:last-child{ 
+        margin: 0;
+    }
     &__head {
         display: flex;
         align-items: center;
