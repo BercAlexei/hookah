@@ -16,6 +16,14 @@ export default function slider() {
         },
         576: {
           items: 2
+        },
+        375: {
+          items: 1,
+          gutter: 20
+        },
+        320: {
+          items: 1,
+          gutter: 20
         }
       }
     });
@@ -35,6 +43,10 @@ export default function slider() {
         },
         576: {
           items: 2
+        },
+        320: {
+          items: 1,
+          gutter: 20
         }
       }
     });
@@ -51,6 +63,13 @@ export default function slider() {
       responsive: {
         768: {
           items: 3
+        },
+        375: {
+          items: 1,
+          gutter: 20
+        },
+        320: {
+          items: 1
         }
       }
     });
@@ -66,6 +85,12 @@ export default function slider() {
       responsive: {
         768: {
           items: 3
+        },
+        375: {
+          items: 1
+        },
+        320: {
+          items: 1
         }
       }
     });
@@ -81,6 +106,12 @@ export default function slider() {
       responsive: {
         768: {
           items: 3
+        },
+        375: {
+          items: 1
+        },
+        320: {
+          items: 1
         }
       }
     });

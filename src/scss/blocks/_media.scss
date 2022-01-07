@@ -151,7 +151,7 @@
         background: #30333B;
         margin-top: 0;
         width: 100vw;
-        height: 100vh;
+        height: 458px;
         top: -100vh;
         left: 0;
         z-index: 200;
@@ -182,7 +182,7 @@
     }
     .humburger {
         display: flex;
-        z-index: 200;
+        z-index: 202;
     }
     .promo {
         min-height: 710px;
@@ -336,7 +336,6 @@
         min-height: 640px;
         &__info {
             width: 100%;
-            // flex-direction: column;
             margin-top: 100px;
             &-tel {
                 a {
@@ -347,7 +346,13 @@
     }
 
     .adventages {
-        display: none;
+        padding: 0;
+        &__content {
+            right: 0;
+            top: 0;
+            width: 100vw;
+            padding: 61px 15px;
+        }
     }
     .menu {
         &__head {
@@ -405,5 +410,190 @@
 }
 
 @media (max-width: 576px) {
-    
+    .container {
+        max-width: 345px;
+    }
+
+    .header {
+        &__social {
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            z-index: 201;
+            transition: all .5s;
+            top: -100vh;
+            margin: 0;
+            &_active {
+                top: 401px;
+            }
+        }
+    }
+
+    .nav-menu {
+        height: 458px;
+        padding: 75px 0 102px 0;
+    }
+
+    .title {
+        font-size: 26px;
+        line-height: 38px;
+        &_promo {
+            margin-top: 71px;
+            font-size: 38px;
+            line-height: 55px;
+            &:before {
+                width: 100%;
+                top: -31px;
+            }
+        }
+        &_tab {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &_restaurant {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        &_card {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    .promo {
+        min-height: 710px;
+        &__info {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 62px;
+            &-tel {
+                a {
+                    font-size: 16px;
+                }
+            }
+            &-time {
+                margin-top: 12px;
+            }
+            &-add {
+                margin-top: 12px;
+            }
+        }
+    }
+    .traditions {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "info "
+            "one"
+            "two"
+            "three";
+        }
+        &__info {
+            margin-top: 46px;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .interior {
+        min-height: 480px;
+        .slider {
+            margin-top: 44px;
+            &__img {
+                height: 263px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .menu {
+        min-height: 653px;
+        &__head {
+            padding-bottom: 145px;
+            border: none;
+            &-img {
+                height: 110px;
+            }
+        }
+        &__btns {
+            margin: 0;
+            top: 213px;
+        }
+        &__cards {
+            margin-top: 30px;
+        }
+    }
+    .card {
+        width: 100%;
+    }
+    .tabs {
+        flex-direction: column;
+    }
+    .adventages {
+        min-height: 745px;
+        &__content {
+            height: 563px;
+            padding: 60px 15px;
+        }
+    }
+    .news {
+        &__slider {
+            &-title {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+    .footer {
+        min-height: 630px;
+        background-size: 100%;
+        &__contacts {
+            min-width: 340px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        max-width: 300px;
+    }
+    .header {
+        &__logo {
+            height: 130px;
+        }
+    }
+    .humburger {
+        margin-top: 85px;
+    }
+    .traditions {
+        padding: 30px 0;
+    }
+    .menu {
+        &__head {
+            &-img {
+                height: 90px;
+            }
+        }
+    }
+    .footer {
+        min-height: 630px;
+        background-size: 100%;
+        &__contacts {
+            min-width: 300px;
+        }
+    }
+    .btn {
+        &_dark {
+            width: 130px;
+            padding: 20px 15px;
+            font-size: 15px;
+            line-height: 26px;
+            span {
+                &::before {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
 }

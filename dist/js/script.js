@@ -3865,17 +3865,23 @@ function mene() {
   var humburger = document.querySelector('.humburger'),
       menu = document.querySelector('.nav-menu'),
       link = menu.querySelectorAll('li'),
-      body = document.querySelector('body');
+      body = document.querySelector('body'),
+      social = document.querySelector('.header__social'),
+      overlay = document.querySelector('.overlay');
   humburger.addEventListener('click', function () {
     humburger.classList.toggle('humburger_active');
     body.classList.toggle('hidden');
     menu.classList.toggle('nav-menu_active');
+    social.classList.toggle('header__social_active');
+    overlay.classList.toggle('overlay_active');
   });
   link.forEach(function (item) {
     item.addEventListener('click', function () {
       humburger.classList.toggle('humburger_active');
       menu.classList.toggle('nav-menu_active');
       body.classList.toggle('hidden');
+      social.classList.toggle('header__social_active');
+      overlay.classList.toggle('overlay_active');
     });
   });
 }
@@ -3910,6 +3916,14 @@ function slider() {
       },
       576: {
         items: 2
+      },
+      375: {
+        items: 1,
+        gutter: 20
+      },
+      320: {
+        items: 1,
+        gutter: 20
       }
     }
   });
@@ -3927,6 +3941,10 @@ function slider() {
       },
       576: {
         items: 2
+      },
+      320: {
+        items: 1,
+        gutter: 20
       }
     }
   });
@@ -3942,6 +3960,13 @@ function slider() {
     responsive: {
       768: {
         items: 3
+      },
+      375: {
+        items: 1,
+        gutter: 20
+      },
+      320: {
+        items: 1
       }
     }
   });
@@ -3957,6 +3982,12 @@ function slider() {
     responsive: {
       768: {
         items: 3
+      },
+      375: {
+        items: 1
+      },
+      320: {
+        items: 1
       }
     }
   });
@@ -3972,6 +4003,12 @@ function slider() {
     responsive: {
       768: {
         items: 3
+      },
+      375: {
+        items: 1
+      },
+      320: {
+        items: 1
       }
     }
   });
